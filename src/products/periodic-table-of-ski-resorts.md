@@ -1,6 +1,6 @@
 ---
 title: "Periodic Table of Ski Resorts"
-order: 5
+order: 6
 meta_desc: "The Periodic Table of Ski Resorts brings a data-oriented approach to different ski regions by packing extensive detail about each resort into a 18&#8243; x 24&#8243; poster."
 og_img: /images/og/periodic-table-of-ski-resorts.png
 specs:
