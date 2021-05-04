@@ -1,0 +1,48 @@
+
+// @mixin rainbow_gradient($base: #23d5ab, $color1, $color2, $color3) {
+//   background: $base; /* Old browsers */
+//   background: -moz-linear-gradient(-45deg, $color1, $color2, $color3); /* FF3.6-15 */
+//   background: -webkit-linear-gradient(-45deg, $color1, $color2, $color3); /* Chrome10-25,Safari5.1-6 */
+//   background: linear-gradient(135deg, $color1, $color2, $color3); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+// }
+
+// riseup animation
+// no defaults
+// @mixin riseup($name, $from, $to, $speed) {
+
+//   transform: translateY($to);
+//   -webkit-animation: riseup-#{$name} $speed; /* Safari, Chrome and Opera > 12.1 */
+//   -moz-animation: riseup-#{$name} $speed; /* Firefox < 16 */
+//   -ms-animation: riseup-#{$name} $speed; /* Internet Explorer */
+//   -o-animation: riseup-#{$name} $speed; /* Opera < 12.1 */
+//   animation: riseup-#{$name} $speed;
+
+//   @keyframes riseup-#{$name} {
+//       from { transform: translateY($from); }
+//       to   { transform: translateY($to); }
+//   }
+
+//   /* Firefox < 16 */
+//   @-moz-keyframes riseup-#{$name} {
+//       from { transform: translateY($from); }
+//       to   { transform: translateY($to); }
+//   }
+
+//   /* Safari, Chrome and Opera > 12.1 */
+//   @-webkit-keyframes riseup-#{$name} {
+//       from { transform: translateY($from); }
+//       to   { transform: translateY($to); }
+//   }
+
+//   /* Internet Explorer */
+//   @-ms-keyframes riseup-#{$name} {
+//       from { transform: translateY($from); }
+//       to   { transform: translateY($to); }
+//   }
+
+//   /* Opera < 12.1 */
+//   @-o-keyframes riseup-#{$name} {
+//       from { transform: translateY($from); }
+//       to   { transform: translateY($to); }
+//   }
+// }

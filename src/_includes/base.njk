@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>
+    {{ title + ' | ' + site.title if title and title != 'About' else site.title}}
+  </title>
+  {%- include "og.njk" %}
+  <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
+</head>
+<body>
+  <header role="banner" class="site-header">
+    {% include "nav.njk" %}
+  </header>
+  <main role="main" class="site-main">
+    {{ content | safe }}
+  </main>
+  <footer role="contentinfo" class="site-footer px-2 text-center">
+    This site does not track you. Come and go as you please. Happy Trails!
+  </footer>
+</body>
+</html>

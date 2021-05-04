@@ -1,0 +1,82 @@
+---
+layout: base.njk
+---
+
+<header class="page-header">
+  <div class="container-fluid container-fluid--maxwidth">
+    <div class="row">
+      <div class="col-xl-6">
+        <div class="row justify-content-between">
+          <div class="col-xl-8">
+            <div class="page-header__title">
+                {{ title }}
+            </div>
+          </div>
+          <div class="col-xl-3">
+            <ul class="page-header__specs">
+              {% for spec in specs %}
+                <li>
+                  {{ spec }}
+                </li>
+              {% endfor %}
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="col-xl-6">
+        <div class="page-header__blurb">
+          {{ content | safe }}
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+
+<div class="page-section page-section--compact-top">
+  <div class="container-fluid container-fluid--maxwidth mb-5">
+    <img src="/images/products/{{ page.fileSlug }}/{{ page.fileSlug }}-page-hero.jpg" class="img-fluid">
+  </div>
+  <div class="container text-center">
+    {% set count %}{{ images.length }}{% endset %}
+    {% for pic in images %}
+      <img src="/images/products/{{ page.fileSlug }}/pic{{ loop.index }}{{ pic.ext }}" class="img-fluid{{ ' mb-5' if loop.index != count }}">
+    {% endfor %}
+  </div>
+</div>
+
+<div class="page-section page-section--compact-top">
+  <div class="container">
+    <div class="row justify-content-md-between mb-5">
+      <div class="col-12 col-lg-6">
+        <dl class="list-more text-lg-right">
+          <dt>Available at:</dt>
+            {% for retailer in retailers %}
+              <dd>
+                <a href="{{ retailer.url }}" target="_blank">
+                  {{ retailer.name }}
+                </a>
+              </dd>
+            {% endfor %}
+        </dl>
+      </div>
+    </div>
+      <div class="row justify-content-md-between">
+      <div class="col-12 col-lg-6 ml-lg-auto">
+        <dl class="list-more">
+          <dt>
+            You Might Also Like
+          </dt>
+          {%- for product in collections.products | allButCurrent(page.url) %}
+          <dd>
+            <a href="{{ product.url | url }}">
+              {{ product.data.title }}
+            </a>
+          </dd>
+          {%- endfor -%}
+        </dl>
+      </div>
+    </div>
+  </div>
+</div>
+
+
