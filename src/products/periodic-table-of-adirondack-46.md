@@ -16,8 +16,6 @@ retailers:
     url: "http://mountainwanderer.com/proddetail.php?prod=POS46"
   - name: Adirondack Trading Company
     url: "http://www.adktrade.com/"
-  - name: Fifty Home
-    url: "https://www.fiftyhome.com/"
   - name: Outdoor Gear Exchange
     url: "https://www.gearx.com/"
 ---
