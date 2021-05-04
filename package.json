@@ -25,6 +25,7 @@
     "sass": "^1.32.7"
   },
   "dependencies": {
-    "html-minifier": "^4.0.0"
+    "html-minifier": "^4.0.0",
+    "netlify-cli": "^3.26.1"
   }
 }
