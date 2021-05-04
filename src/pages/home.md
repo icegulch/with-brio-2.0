@@ -8,7 +8,7 @@ specs:
   - Passports
   - Posters
   - Prints
-blurb: "Hi! I'm Steve. I'm a New Hampshire native with a Colorado problem. I work in print and on the web. I sift through maps and tables looking for compelling stories in data. My sister, Kate, is my partner in crime! Together, we bring to life products that encourage kids and adults to get outdoors!"
+blurb: "Hi! I'm Steve. I'm a New Hampshire native with a Colorado problem. I work in print and on the web. I sift through maps and tables looking for compelling stories in data. My sister, Kate, is my partner in crime! Together, we bring to life products that encourage kids and adults to get outdoors."
 ---
 
 <div class="page-section page-section--compact-top">
@@ -18,7 +18,7 @@ blurb: "Hi! I'm Steve. I'm a New Hampshire native with a Colorado problem. I wor
       <div class="col-md-6 col-xl-4 showcase">
         <figure class="showcase__img">
           <a href="{{ product.url | url }}" class="showcase__link">
-            <img src="/images/products/{{ product.fileSlug }}/{{ product.fileSlug }}-hero.jpg?nf_resize=fit&w=780" class="img-fluid">
+            <img src="/images/products/{{ product.fileSlug }}/{{ product.fileSlug }}-hero.jpg" class="img-fluid">
           </a>
         </figure>
       </div>

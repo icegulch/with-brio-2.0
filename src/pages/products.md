@@ -17,7 +17,7 @@ blurb: "In early 2015, I decided to give form to an idea that had long been simm
     <div class="col-md-4 showcase">
       <figure class="showcase__img">
         <a href="{{ product.url | url }}" class="showcase__link">
-          <img src="/images/products/{{ product.fileSlug }}/{{ product.fileSlug }}-hero.jpg?nf_resize=fit&w=780" class="img-fluid">
+          <img src="/images/products/{{ product.fileSlug }}/{{ product.fileSlug }}-hero.jpg" class="img-fluid">
         </a>
       </figure>
     </div>
