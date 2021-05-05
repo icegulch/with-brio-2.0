@@ -8,8 +8,13 @@
     "url": "git+https://github.com/icegulch/with-brio-2.0.git"
   },
   "scripts": {
-    "serve": "eleventy --serve",
-    "deploy": "eleventy"
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
+    "watch:eleventy": "eleventy --serve",
+    "build:sass": "sass  --no-source-map src/sass:public/css",
+    "build:eleventy": "eleventy",
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r --no-map",
+    "start": "npm-run-all build:sass --parallel watch:*",
+    "build": "npm-run-all build:sass build:eleventy"
   },
   "author": "icegulch",
   "devDependencies": {
