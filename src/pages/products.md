@@ -7,21 +7,24 @@ specs:
   - Passports
   - Posters
   - Prints
-blurb: "In early 2015, I decided to give form to an idea that had long been simmering: a 'periodic table' of New Hampshire's 4000-foot mountains. It was intended to be a gift for one or two hiking friends. Three years and as many print runs later, I'm still humbled by the positive reception. Buoyed by others' passion for the White Mountains, I continue to dream up products that abide by one simple principle: make things I would've enjoyed as a young hiker."
+blurb: "In early 2015, I decided to give form to an idea that had long been simmering: a 'periodic table' of New Hampshire's 4000-foot mountains. It was intended to be a gift for one or two hiking friends. Several years and many print runs later, I'm still humbled by the positive reception. My sister and I continue to dream up products that abide by one simple principle: make things we would've enjoyed as a young hikers."
 ---
 
 <div class="page-section page-section--compact-top">
   <div class="container-fluid container-fluid--maxwidth">
     <div class="row justify-content-center">
-    {%- for product in collections.orderedProducts %}
-    <div class="col-md-4 showcase">
-      <figure class="showcase__img">
+      {%- for product in collections.orderedProducts %}
+      <div class="col-md-6 col-xl-4 showcase">
         <a href="{{ product.url | url }}" class="showcase__link">
-          <img src="/images/products/{{ product.fileSlug }}/{{ product.fileSlug }}-hero.jpg" class="img-fluid">
+          <figure class="showcase__img">
+            <img src="/images/products/{{ product.fileSlug }}/{{ product.fileSlug }}-hero.jpg" class="img-fluid">
+            <figcaption class="pt-2 text-left">
+              {{ product.data.title }}
+            </figcaption>
+          </figure>
         </a>
-      </figure>
-    </div>
-    {%- endfor -%}
+      </div>
+      {%- endfor -%}
     </div>
   </div>
 </div>

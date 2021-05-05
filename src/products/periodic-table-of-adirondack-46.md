@@ -10,10 +10,10 @@ images:
   - ext: '.jpg'
   - ext: '.jpg'
 retailers:
-  - name: "Adirondack Experience: The Museum on Blue Lake"
-    url: "https://www.theadkx.org/"
   - name: The Mountain Wanderer
     url: "http://mountainwanderer.com/proddetail.php?prod=POS46"
+  - name: "Adirondack Experience: The Museum on Blue Lake"
+    url: "https://www.theadkx.org/"
   - name: Adirondack Trading Company
     url: "http://www.adktrade.com/"
   - name: Outdoor Gear Exchange
