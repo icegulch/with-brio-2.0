@@ -10,6 +10,7 @@ images:
   - ext: '.jpg'
   - ext: '.jpg'
   - ext: '.jpg'
+  - ext: '.jpg'
 retailers:
   - name: The Mountain Wanderer
     url: "http://www.mountainwanderer.com/proddetail.php?prod=POS6"
