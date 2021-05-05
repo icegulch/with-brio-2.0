@@ -6,7 +6,7 @@ og_img: /images/og/periodic-table-of-ski-resorts.png
 specs:
   - 18" x 24"
   - 24" x 18"
-  - Digital
+  - Enhanced Matte Heavyweight Stock
 images:
   -  ext: '.jpg'
   -  ext: '.jpg'
