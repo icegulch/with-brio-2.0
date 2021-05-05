@@ -41,7 +41,7 @@ layout: base.njk
   <div class="container text-center">
     {% set count %}{{ images.length }}{% endset %}
     {% for pic in images %}
-      <img src="/images/products/{{ page.fileSlug }}/pic{{ loop.index }}{{ pic.ext }}?nf_resize=smartcrop&w=1100" class="img-fluid{{ ' mb-5' if loop.index != count }}">
+      <img src="/images/products/{{ page.fileSlug }}/pic{{ loop.index }}{{ pic.ext }}?nf_resize=smartcrop&w=1200" class="img-fluid{{ ' mb-5' if loop.index != count }}">
     {% endfor %}
   </div>
 </div>
