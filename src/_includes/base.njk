@@ -2,10 +2,11 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>
     {{ title + ' | ' + site.title if title and title != 'With Brio' else site.title}}
   </title>
+  <meta name="description" content="{{ site.meta_desc }}">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   {%- include "og.njk" %}
   <link rel="stylesheet" href="{{ '/css/styles.css' | url }}" />
 </head>
