@@ -55,6 +55,11 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
+    addPassthroughCopy: true,
+    templateFormats: ["md", "njk", "html"],
+    markdownTemplateEngine: "njk",
+    htmlTemplateEngine: "njk",
+    dataTemplateEngine: "njk",
     dir: {
       input: "src",
       output: "public",
