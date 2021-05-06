@@ -18,6 +18,7 @@
   "author": "Steve Bailey",
   "devDependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "@11ty/eleventy-img": "^0.8.3",
     "autoprefixer": "^10.2.5",
     "cross-env": "^7.0.3",
     "luxon": "^1.26.0",
@@ -28,7 +29,9 @@
     "sass": "^1.32.7"
   },
   "dependencies": {
+    "eleventy-plugin-sharp-respimg": "^1.1.6",
     "html-minifier": "^4.0.0",
-    "netlify-cli": "^3.26.1"
+    "netlify-cli": "^3.26.2",
+    "vanilla-lazyload": "^17.1.2"
   }
 }

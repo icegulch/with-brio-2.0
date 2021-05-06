@@ -1,5 +1,9 @@
+// To inspect
 const inspect = require("util").inspect;
+
+// To minify HTML
 const htmlmin = require("html-minifier");
+
 
 module.exports = function (eleventyConfig) {
 
@@ -46,10 +50,8 @@ module.exports = function (eleventyConfig) {
       });
       return minified;
     }
-
     return content;
   });
-
 
   return {
     addPassthroughCopy: true,

@@ -36,12 +36,12 @@ layout: base.njk
 
 <div class="page-section page-section--compact-top">
   <div class="container-fluid container-fluid--maxwidth mb-5">
-    <img src="/images/products/{{ page.fileSlug }}/{{ page.fileSlug }}-page-hero.jpg?nf_resize=fit&w=1600" class="img-fluid">
+    <img src="/images/products/page-hero/{{ page.fileSlug }}.jpg?nf_resize=fit&w=1600" class="img-fluid">
   </div>
   <div class="container text-center">
     {% set count %}{{ images.length }}{% endset %}
     {% for pic in images %}
-      <img src="/images/products/{{ page.fileSlug }}/pic{{ loop.index }}{{ pic.ext }}?nf_resize=fit&w=1200" class="img-fluid{{ ' mb-5' if loop.index != count }}">
+      <img src="/images/products/details/{{ page.fileSlug }}-{{ loop.index }}{{ pic.ext }}?nf_resize=fit&w=1200" class="img-fluid{{ ' mb-5' if loop.index != count }}">
     {% endfor %}
   </div>
 </div>
