@@ -18,7 +18,7 @@ blurb: "Hi! I'm Steve. I'm a New Hampshire native with a Colorado problem. I wor
       <div class="col-md-6 col-xl-4 showcase">
         <a href="{{ product.url | url }}" class="showcase__link">
           <figure class="showcase__img">
-            <img src="/images/products/showcase/{{ product.fileSlug }}.jpg?nf_resize=smartcrop&w=720&h=480" class="img-fluid" width="1500" height="10001">
+            <img src="/images/products/showcase/{{ product.fileSlug }}.jpg?nf_resize=smartcrop&w=720&h=480" class="img-fluid" width="1500" height="1001">
             <figcaption class="pt-2 text-left">
               {{ product.data.title }}
             </figcaption>
