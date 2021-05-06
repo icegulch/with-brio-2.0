@@ -3,12 +3,16 @@
   "version": "1.0.0",
   "main": ".eleventy.js",
   "scripts": {
-    "watch:sass": "sass --watch src/sass:public/css",
-    "build:sass": "sass src/sass:public/css",
+    "watch:sass": "sass  --no-source-map --watch src/sass:public/css",
     "watch:eleventy": "eleventy --serve",
+    "build:sass-site": "sass  --no-source-map src/sass/styles.scss public/css/styles.css",
+    "build:sass": "npm-run-all --parallel build:sass-site",
     "build:eleventy": "eleventy",
-    "start": "npm-run-all build:sass --parallel watch:*",
-    "build": "npm-run-all build:*"
+    "postbuild": "postcss public/css/*.css -u autoprefixer cssnano -r",
+    "start": "cross-env ELEVENTY_ENV=dev npm-run-all build:sass --parallel watch:*",
+    "build": "cross-env ELEVENTY_ENV=prod npm-run-all build:sass build:eleventy",
+    "lint": "stylelint 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'",
+    "lint:fix": "stylelint --fix 'src/sass/**/*.scss' 'src/sass/**/**/*.scss' 'src/sass/**/**/**/*.scss'"
   },
   "repository": {
     "type": "git",
@@ -23,10 +27,25 @@
   "homepage": "https://github.com/icegulch/with-brio-2.0#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
+    "autoprefixer": "^10.2.5",
+    "cross-env": "^7.0.3",
+    "cssnano": "^5.0.2",
+    "dotenv": "^9.0.0",
     "html-minifier": "^4.0.0",
-    "npm-run-all": "^4.1.5",
-    "sass": "^1.32.12"
+    "luxon": "^1.26.0",
+    "markdown-it": "^10.0.0",
+    "npm-run-all": "^1.7.0",
+    "postcss-cli": "^8.3.1",
+    "sass": "^1.32.12",
+    "stylelint": "^7.7.0",
+    "stylelint-config": "^0.1.1",
+    "stylelint-config-standard": "^16.0.0",
+    "stylelint-order": "^0.5.0",
+    "stylelint-scss": "^1.5.2",
+    "stylelint-selector-bem-pattern": "^2.1.0"
   },
-  "devDependencies": {},
-  "description": ""
+  "description": "",
+  "browserslist": [
+    "last 2 versions"
+  ]
 }
