@@ -15,6 +15,7 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
   eleventyConfig.addPassthroughCopy("./src/images");
   eleventyConfig.addPassthroughCopy("./src/css");
+  eleventyConfig.addPassthroughCopy({"./src/fonts" : "css/"});
 
   // Allow for inspection
   eleventyConfig.addFilter("debug", (content) => `${inspect(content)}`);
