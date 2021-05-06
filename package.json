@@ -3,6 +3,10 @@
   "version": "1.0.0",
   "description": "With Brio 2.0",
   "main": "index.html",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/icegulch/with-brio-2.0.git"
+  },
   "scripts": {
     "watch:eleventy": "eleventy --serve",
     "watch:sass": "sass --no-source-map --watch src/sass:public/css",
