@@ -9,6 +9,7 @@ specs:
 images:
   - ext: '.jpg'
   - ext: '.jpg'
+  - ext: '.png'
 retailers:
   - name: The Mountain Wanderer
     url: "http://mountainwanderer.com/proddetail.php?prod=POS46"

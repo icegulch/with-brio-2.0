@@ -8,9 +8,12 @@ specs:
   - 24" x 18"
   - Enhanced Matte Heavyweight Stock
 images:
-  -  ext: '.jpg'
-  -  ext: '.jpg'
-  -  ext: '.jpg'
+  -  ext: '.png'
+  -  ext: '.png'
+  -  ext: '.png'
+  -  ext: '.png'
+  -  ext: '.png'
+  -  ext: '.png'
   -  ext: '.jpg'
 retailers:
   - name: Circle Square Diamond
