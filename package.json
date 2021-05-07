@@ -31,7 +31,6 @@
     "cross-env": "^7.0.3",
     "cssnano": "^5.0.2",
     "dotenv": "^9.0.0",
-    "html-minifier": "^4.0.0",
     "luxon": "^1.26.0",
     "markdown-it": "^10.0.0",
     "npm-run-all": "^1.7.0",
@@ -42,7 +41,8 @@
     "stylelint-config-standard": "^16.0.0",
     "stylelint-order": "^0.5.0",
     "stylelint-scss": "^1.5.2",
-    "stylelint-selector-bem-pattern": "^2.1.0"
+    "stylelint-selector-bem-pattern": "^2.1.0",
+    "html-minifier": "^4.0.0",
   },
   "description": "",
   "browserslist": [
