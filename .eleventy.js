@@ -13,7 +13,9 @@ module.exports = function (eleventyConfig) {
   // Let some files pass through to public
   eleventyConfig.addPassthroughCopy("./src/_redirects");
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
-  eleventyConfig.addPassthroughCopy("./src/images");
+  eleventyConfig.addPassthroughCopy("./src/images/about");
+  eleventyConfig.addPassthroughCopy("./src/images/icons");
+  eleventyConfig.addPassthroughCopy("./src/images/og");
   eleventyConfig.addPassthroughCopy("./src/css");
   eleventyConfig.addPassthroughCopy({"./src/fonts" : "css/"});
 
