@@ -39,9 +39,8 @@ layout: base.njk
     <img src="/images/products/page-hero/{{ page.fileSlug }}.jpg?nf_resize=fit&w=1600" class="img-fluid">
   </div>
   <div class="container text-center">
-    {% set count %}{{ images.length }}{% endset %}
     {% for pic in images %}
-      <img src="/images/products/details/{{ page.fileSlug }}-{{ loop.index }}{{ pic.ext }}?nf_resize=fit&w=1200" class="img-fluid{{ ' mb-5' if loop.index != count }}">
+      <img src="/images/products/details/{{ page.fileSlug }}-{{ loop.index }}{{ pic.ext }}?nf_resize=fit&w=1200" class="img-fluid{{ ' mb-5' if not loop.last }}">
     {% endfor %}
   </div>
 </div>
