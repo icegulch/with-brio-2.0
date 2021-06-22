@@ -3,6 +3,7 @@ const inspect = require("util").inspect;
 
 // To minify HTML
 const htmlmin = require("html-minifier");
+const CleanCSS = require("clean-css");
 
 
 module.exports = function (eleventyConfig) {
@@ -14,8 +15,13 @@ module.exports = function (eleventyConfig) {
   eleventyConfig.addPassthroughCopy("./src/_redirects");
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
   eleventyConfig.addPassthroughCopy("./src/images");
-  eleventyConfig.addPassthroughCopy("./src/css");
+  eleventyConfig.addPassthroughCopy("./src/css/*");
   eleventyConfig.addPassthroughCopy({"./src/fonts" : "css/"});
+
+
+  eleventyConfig.addFilter("cssmin", function(code) {
+    return new CleanCSS({}).minify(code).styles;
+  });
 
   // Allow for inspection
   eleventyConfig.addFilter("debug", (content) => `${inspect(content)}`);
