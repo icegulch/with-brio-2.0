@@ -43,7 +43,9 @@
     "stylelint-config-standard": "^22.0.0",
     "stylelint-order": "^4.1.0",
     "stylelint-scss": "^1.5.2",
-    "stylelint-selector-bem-pattern": "^2.1.0"
+    "stylelint-selector-bem-pattern": "^2.1.0",
+    "axios": ">=0.21.2",
+    "path-parse": ">=1.0.7"
   },
   "description": "",
   "browserslist": [
