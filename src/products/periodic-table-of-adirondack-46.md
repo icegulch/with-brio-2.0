@@ -2,14 +2,13 @@
 title: "Periodic Table of the / Tableau périodique des Adirondack 46"
 order: 5
 meta_desc: "An 18&#8243; x 24&#8243; print that presents a wealth of data on the Adirondack 46 High Peaks in a format similar to the Periodic Table of Elements."
-og_img: /images/og/periodic-table-of-adirondack-46.png
+og_img: og-periodic-table-of-adirondack-46
 specs:
   - 18" x 24"
   - Offset
 images:
   - ext: '.jpg'
   - ext: '.jpg'
-  - ext: '.png'
 retailers:
   - name: The Mountain Wanderer
     url: "http://mountainwanderer.com/proddetail.php?prod=POS46"

@@ -8,16 +8,9 @@ const CleanCSS = require("clean-css");
 
 module.exports = function (eleventyConfig) {
 
-  // Watch for sass file changes
-  eleventyConfig.addWatchTarget("./src/sass/");
-
   // Let some files pass through to public
-  eleventyConfig.addPassthroughCopy("./src/_redirects");
   eleventyConfig.addPassthroughCopy("./src/robots.txt");
-  eleventyConfig.addPassthroughCopy("./src/images");
-  eleventyConfig.addPassthroughCopy("./src/css/*");
-  eleventyConfig.addPassthroughCopy({"./src/fonts" : "css/"});
-
+  eleventyConfig.addPassthroughCopy("./src/fonts");
 
   eleventyConfig.addFilter("cssmin", function(code) {
     return new CleanCSS({}).minify(code).styles;
@@ -62,16 +55,6 @@ module.exports = function (eleventyConfig) {
   });
 
   return {
-    addPassthroughCopy: true,
-    templateFormats: ["md", "njk", "html"],
-    // If your site lives in a different subdirectory, change this.
-    // Leading or trailing slashes are all normalized away, so don’t worry about it.
-    // If you don’t have a subdirectory, use "" or "/" (they do the same thing)
-    // This is only used for URLs (it does not affect your file structure)
-    pathPrefix: "/",
-    markdownTemplateEngine: "njk",
-    htmlTemplateEngine: "njk",
-    dataTemplateEngine: "njk",
     dir: {
       input: "src",
       output: "public",

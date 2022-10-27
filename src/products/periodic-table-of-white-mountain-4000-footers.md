@@ -2,7 +2,7 @@
 title: "Periodic Table of White Mountain 4000-Footers"
 order: 3
 meta_desc: "An 18&#8243; x 24&#8243; print that presents a wealth of data on the 48 New Hampshire 4000-foot peaks in a format similar to the Periodic Table of Elements."
-og_img: /images/og/periodic-table-of-white-mountain-4000-footers.png
+og_img: og-periodic-table-of-white-mountain-4000-footers
 specs:
   - 18" x 24"
   - Offset

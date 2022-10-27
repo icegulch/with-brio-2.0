@@ -2,7 +2,7 @@
 title: "Periodic Table of Ski Resorts"
 order: 6
 meta_desc: "The Periodic Table of Ski Resorts brings a data-oriented approach to different ski regions by packing extensive detail about each resort into a 18&#8243; x 24&#8243; poster."
-og_img: /images/og/periodic-table-of-ski-resorts.png
+og_img: og-periodic-table-of-ski-resorts
 specs:
   - 18" x 24"
   - 24" x 18"
@@ -14,7 +14,6 @@ images:
   -  ext: '.png'
   -  ext: '.png'
   -  ext: '.png'
-  -  ext: '.jpg'
 retailers:
   - name: Circle Square Diamond
     url: "https://www.circlesquarediamond.com/collections/periodic-table-of-ski-resorts"

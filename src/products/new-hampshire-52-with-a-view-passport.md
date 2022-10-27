@@ -2,7 +2,7 @@
 title: "New Hampshire 52 With A View Passport"
 order: 2
 meta_desc: "This pocket-size passport is ideal for keeping track of your climbs of the increasingly popular 'New Hampshire 52 With a View' list."
-og_img: /images/og/new-hampshire-52-with-a-view-passport.png
+og_img: og-new-hampshire-52-with-a-view-passport
 specs:
   - 3.5" x 5"
   - 56 pages

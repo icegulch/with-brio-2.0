@@ -36,11 +36,11 @@ layout: base.njk
 
 <div class="page-section page-section--compact-top">
   <div class="container-fluid container-fluid--maxwidth mb-5">
-    <img src="/images/products/page-hero/{{ page.fileSlug }}.jpg?nf_resize=fit&w=1600" class="img-fluid" loading="lazy">
+    <img src="{{ site.cloudinary_url }}c_fill,w_2000,f_auto/{{ page.fileSlug }}" class="img-fluid" loading="lazy">
   </div>
   <div class="container text-center">
     {% for pic in images %}
-      <img src="/images/products/details/{{ page.fileSlug }}-{{ loop.index }}{{ pic.ext }}?nf_resize=fit&w=1200" class="img-fluid{{ ' mb-5' if not loop.last }}" loading="lazy">
+      <img src="{{ site.cloudinary_url }}c_fill,w_2000,f_auto/{{ page.fileSlug }}-{{ loop.index }}" class="img-fluid{{ ' mb-5' if not loop.last }}" loading="lazy">
     {% endfor %}
   </div>
 </div>

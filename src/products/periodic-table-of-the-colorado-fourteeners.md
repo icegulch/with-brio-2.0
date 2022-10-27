@@ -2,7 +2,7 @@
 title: "Periodic Table of the Fifty-Something Colorado Fourteeners"
 order: 4
 meta_desc: "Are you a peakbagger? A chemist? A Colorado enthusiast? This print has you covered, distilling a wealth of data about Colorado's 'Fourteeners' into a colorful 24x18 print."
-og_img: /images/og/periodic-table-of-the-colorado-fourteeners.png
+og_img: og-periodic-table-of-the-colorado-fourteeners
 specs:
   - 24" x 18"
   - Offset printed

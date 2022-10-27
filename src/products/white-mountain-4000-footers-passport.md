@@ -2,7 +2,7 @@
 title: "White Mountain 4000-Footers Passport"
 order: 1
 meta_desc: "A complement to the Periodic Table of the White Mountain 4000-Footers poster, this pocket-size passport is tailor-made for tracking of your 4000-footer climbs."
-og_img: /images/og/white-mountain-4000-footers-passport.png
+og_img: og-white-mountain-4000-footers-passport
 specs:
   - 3.5" x 5"
   - 52 pages

@@ -2,7 +2,7 @@
 title: "Topographic Fingerprints of the Four Thousand Footers"
 order: 6
 meta_desc: "Reminiscent of vintage scientific identification posters, this foil-stamped, 16&#8243; x 20&#8243; print challenges you to become familiar with the topographic &quot;fingerprints&quot; of all of New Hampshire&#x27;s 4000-Footers."
-og_img: /images/og/topographic-fingerprints-of-the-four-thousand-footers.png
+og_img: og-topographic-fingerprints-of-the-four-thousand-footers
 specs:
   - 16" x 20"
   - Foil-stamp
